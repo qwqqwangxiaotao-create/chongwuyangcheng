@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WonderPets</title>
+    <!-- 保留你的 Tailwind 和字体 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- 保留你的自定义动画 CSS -->
     <style>
       body {
         font-family: 'Nunito', sans-serif;
@@ -39,19 +42,14 @@
         animation: pop-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
-  }
-}
-</script>
-</head>
+    
+    <!-- ⚠️ 我删除了 importmap，因为本地开发不需要它，反而会报错 -->
+  </head>
   <body>
     <div id="root"></div>
+
+    <!-- ⚠️⚠️⚠️ 加上这行！这是启动 React 的关键 ⚠️⚠️⚠️ -->
+    <!-- 根据你的截图，你的 index.tsx 就在根目录下，所以路径是 /index.tsx -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
